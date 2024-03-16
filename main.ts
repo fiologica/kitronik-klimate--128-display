@@ -7,7 +7,7 @@ let HI = 0
 input.onButtonPressed(Button.A, function () {
     dewPoint()
     heatIndex()
-    basic.pause(100)
+    basic.pause(500)
     display()
 })
 function display () {
