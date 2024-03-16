@@ -9,6 +9,9 @@ input.onButtonPressed(Button.A, function () {
     heatIndex()
     basic.pause(500)
     display()
+    basic.pause(60000)
+    kitronik_VIEW128x64.clear()
+    kitronik_VIEW128x64.controlDisplayOnOff(kitronik_VIEW128x64.onOff(false))
 })
 function display () {
     kitronik_VIEW128x64.controlDisplayOnOff(kitronik_VIEW128x64.onOff(true))
@@ -18,9 +21,6 @@ function display () {
     kitronik_VIEW128x64.show("Humidity:" + " " + Kitronik_klimate.humidity() + " " + "%", 3)
     kitronik_VIEW128x64.show("Dew" + " " + "point:" + " " + TdP + " " + "°C", 4)
     kitronik_VIEW128x64.show("Heat" + " " + "index:" + " " + heatindexC + " " + "°C", 5)
-    basic.pause(60000)
-    kitronik_VIEW128x64.clear()
-    kitronik_VIEW128x64.controlDisplayOnOff(kitronik_VIEW128x64.onOff(false))
 }
 input.onButtonPressed(Button.B, function () {
     kitronik_VIEW128x64.clear()
