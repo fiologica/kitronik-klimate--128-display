@@ -14,7 +14,7 @@ function display () {
     kitronik_VIEW128x64.setFontSize(kitronik_VIEW128x64.FontSelection.Normal)
     kitronik_VIEW128x64.show("Temperature:" + " " + Kitronik_klimate.temperature(Kitronik_klimate.TemperatureUnitList.C) + " " + "°C", 1)
     kitronik_VIEW128x64.show("Pressure:" + " " + Kitronik_klimate.pressure(Kitronik_klimate.PressureUnitList.mBar) + " " + "mBar", 2)
-    kitronik_VIEW128x64.show("Humidity:" + "" + Kitronik_klimate.humidity() + " " + "%", 3)
+    kitronik_VIEW128x64.show("Humidity:" + " " + Kitronik_klimate.humidity() + " " + "%", 3)
     kitronik_VIEW128x64.show("Dew" + " " + "point:" + " " + TdP + " " + "°C", 4)
     kitronik_VIEW128x64.show("Heat" + " " + "index:" + "" + heatindexC + "" + "°C", 5)
     basic.pause(60000)
